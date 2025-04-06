@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="page-heqader">
+    <header class="page-hedader">
       <!-- navigation -->
       <div class="container container-header">
         <nav class="header-nav">
@@ -58,13 +58,57 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icon.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
+      <!-- menu -->
     </header>
-
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn">
+          <svg class="close-btn-menu-icon" width="8" height="8">
+            <use href="./images/icon.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <ul class="menu-mobile-list">
+          <li class="mobile-menu-item">Studio</li>
+          <li class="mobile-menu-item">Portfolio</li>
+          <li class="mobile-menu-item">Contacts</li>
+        </ul>
+        <address class="mobile-menu-address">
+          <ul class="menu-address-list">
+            <li class="address-item">
+              <a class="menu-address-link" href="tel:+11(000)111-11-11"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-item"><a class="menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com </a></li>
+        </address>
+          </ul>
+          <ul class="mobile-menu-icon-list">
+            <li class="menu-icon-item"><svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg></li>
+            <li class="menu-icon-item"><svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg></li>
+            <li class="menu-icon-item"><svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg></li>
+            <li class="menu-icon-item"><svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg></li>
+          </ul>
+        
+      </div>
+    </div>
     <!-- main -->
     <main class="main">
       <!-- section first -->
-      <section class="section-first">
+      <section class="section-first hiden">
         <div class="container">
           <h1 class="title-first-section">
             Effective Solutions for Your Business
@@ -75,7 +119,7 @@
         </div>
       </section>
       <!-- section second -->
-      <section class="section-second">
+      <section class="section-second hiden">
         <div class="container container-second">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="list">
@@ -133,7 +177,7 @@
 
       <!-- section third -->
 
-      <section class="section-third">
+      <section class="section-third hiden">
         <div class="container">
           <h2 class="title-section-third">Our Team</h2>
           <ul class="list-section-third">
@@ -355,7 +399,7 @@
 
       <!-- section 4 -->
 
-      <section class="section-fourth">
+      <section class="section-fourth hiden">
         <div class="container container-four-saction">
           <h2 class="title-section-fourth">Our Portfolio</h2>
           <ul class="list-fourth-section">
@@ -460,7 +504,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer hiden">
       <div class="container footer-container">
         <div class="logo-paragraf">
           <a class="webstudio logo-footer" href="./index.html"
@@ -532,7 +576,7 @@
 
     <!-- MODAL WINDOW -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hiden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
